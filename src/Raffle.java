@@ -71,6 +71,7 @@ public class Raffle {
                 System.out.println("This name is already in the list of contestants, please enter a different name.");
             } else {
                 contestants.add(name);
+                System.out.println("");
                 showMenu(); // call the showMenu method after the first and last names are accepted
                 return;
             }
@@ -88,5 +89,6 @@ public class Raffle {
         String winner = contestants.get(winnerIndex);
 
         System.out.println("The winner is: " + winner);
+        System.out.println("");
     }
 }
